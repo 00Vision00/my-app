@@ -3,8 +3,9 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
+import CanvasTag from '@/component/CanvasTag'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <div className={styles.description}>
         <h1>Hello Worlds</h1>
         <Link href="/About">About</Link>
+           {/* <CanvasTag /> */}
         </div>
       </main>
     </>
